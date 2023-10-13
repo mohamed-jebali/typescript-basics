@@ -67,6 +67,32 @@ const student1 : Student = {
 console.log("Dati studente 1: " , student1);
 
 
+// CUSTOM TYPE
+
+
+type Coordinates = [number,number];
+
+
+const city : Coordinates = [22,55]
+
+console.log("Le coordinate della citta' sono: " ,city)
+
+
+// UNION TYPE
+
+// SI POSSONO USARE I CUSTOM TYPE SPECIFICANDO I TIPI DI DATO CHE POSSONO ESSERE PIU DI UNO
+
+type Password = string | number
+
+const user:Password = 'giggio@gmail.com'
+
+const user2: Password = 32322
+
+
+
+console.log("i dati dell'utenti usando custom e union type: ", user,user2)
+
+
 
 
 
