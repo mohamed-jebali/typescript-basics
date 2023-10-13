@@ -12,9 +12,17 @@
    - `sudo npm install -g typescript` // per MacOs
    - `tsc -v` // per controllare la versione installata 
 
-2. Il Browser non legge codice TS ma solo codice JS che viene compilato compilare il codice TypeScript eseguendo il seguente comando:
+2. Il Browser non legge codice TS ma solo codice JS che viene compilato
+
+// compilare il codice TypeScript eseguendo il seguente comando:
 
    - `tsc scripts/app.ts`
+
+## Vantaggi di TypeScript Rispetto a JavaScript
+
+// TypeScript offre dei vantaggi rispetto a JS come il check degli errori  mettendo in evidenza eventuali errori di sintassi
+
+link documentazione: https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html
 
 
 
