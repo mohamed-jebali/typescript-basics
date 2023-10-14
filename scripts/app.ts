@@ -40,7 +40,7 @@ const employeeName:string = employee[0];
 const employeeAge:number = employee[1];
 const employeeIsAvailable:boolean = employee[2];
 
-console.log("Dati Dipendente: " ,employeeName,employeeAge,employeeIsAvailable)
+console.log("Dati Dipendente usando le tuple: " ,employeeName,employeeAge,employeeIsAvailable)
 
 // PER ACCEDERE AI DATI DELL ' ARRAY
 
@@ -64,19 +64,41 @@ const student1 : Student = {
     votes:[2,4,4]
 }
 
-console.log("Dati studente 1: " , student1);
+console.log("Dati studente Mauro usando interface: " , student1);
 
 
 // CUSTOM TYPE
 
 
-type Coordinates = [number,number];
+type Person = {
+    name:string,
+    surname:string,
+    age:number,
+    email:string
 
+}
+
+
+let persona2 : Person
+
+persona2= {
+    name:'Nicolas',
+    surname:'Cavalli',
+    age:22,
+    email:'Nicolas@gmail.com'
+
+}
+
+
+console.log("i dati di persona2 usando Custom Type: " ,persona2)
+
+
+type Coordinates = [number,number];
 
 const city : Coordinates = [22,55]
 
-console.log("Le coordinate della citta' sono: " ,city)
-
+console.log("Le coordinate della citta' sono usando Custom Type: " ,city)
+ 
 
 // UNION TYPE
 
@@ -93,7 +115,61 @@ const user2: Password = 32322
 console.log("i dati dell'utenti usando custom e union type: ", user,user2)
 
 
+// ENUM
 
 
+// ENUM ENUMERAZIONE SONO UNA STRUTTURA DATI CHE CONSENTE DI DICHAIRARE UN SET DI COSNTANTI CON NOMI SIGNIFICATIVI
+// GLI ENUM SONO UTILI PER RAPPRESENTARE UN INSIEME FISSO DI VALORI CORRELLATI CHE HANNO UN SIGNIFICATO SPECIFICO
 
+// ENUM USANDO LE STRINGHE COME VALORE
+
+enum ChessWord {
+    PAWN = 'pawn',
+    KNIGHT = 'knight',
+    BISHOP = 'bishop',
+    ROOK = 'rook',
+    QUEEN = 'queen',
+    KING = 'king'
+}
+
+enum ColorWord  {
+    NERO = 'nero',
+    BIANCO = 'bianco'
+}
+
+
+const giocatore1 = {
+    player:'giacomo',
+    colore: ColorWord.NERO,
+    piece: ChessWord.KNIGHT
+}
+
+
+console.log("i dati del giocatore usando enum con le stringhe: " ,giocatore1);
+
+
+// ENUM USANDO I NUMERI COME VALORE
+
+
+enum ChessNumber {
+    PAWN = 1,
+    KNIGHT = 3,
+    BISHOP = 3,
+    ROOK = 5,
+    QUEEN = 9,
+    KING = 10
+}
+
+
+enum ColorNumber  {
+    NERO = 0,
+    BIANCO = 1
+}
+
+const giocatore2 = {
+    player:'Davide',
+    color:ColorNumber.BIANCO,
+    piece:ChessNumber.ROOK
+}
+console.log("i dati dell' giocatore usando enum numerici: ", giocatore2)
 
