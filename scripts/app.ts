@@ -173,3 +173,22 @@ const giocatore2 = {
 }
 console.log("i dati dell' giocatore usando enum numerici: ", giocatore2)
 
+
+
+// FUNNCTION 
+
+
+// IN TYPESCRIPT LE FUNZIONI POSSONO ESSERE TIPIZZATE
+
+
+function sum(numberA:number,numberB:number):number{
+    return numberA + numberB
+}
+
+// LA FUNZIONE TORNA UN TIPO DATO NUMERICO IN CASO IN CUI NON'ESTATO SPECIFICATO IL TIPO DI DATO DELLA FUNZIONE
+// E GLI ARGOMENTI SONO STATI TIPIZZATI CI SARA L'INFERENCE LA FUNZIONE CAPISCE GIA' CHE DEVE TORNARE UN TIPO DI
+// DATO NUMERICO IN CASO IN CUI NON SI SPECIFICA' IL TIPO DI DATO LA FUNZIONE TORNERA' UNDEFINED NELLA COMPILAZIONE 
+
+let resultSum = sum(5,5);
+
+console.log("il risultato della somma in typescript: " , resultSum);
