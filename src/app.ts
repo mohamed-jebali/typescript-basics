@@ -192,3 +192,74 @@ function sum(numberA:number,numberB:number):number{
 let resultSum = sum(5,5);
 
 console.log("il risultato della somma in typescript: " , resultSum);
+
+
+
+// COMPILATORE
+
+
+// PER COMPILARE UN FILE TS
+// tsc scripts/app.ts --watch
+// tsc scripts/app.ts -w
+
+
+// PER COMPILARE L'INTERO PROGETTO
+// tsc --init
+// VERRA' POI CREATO UN FILE tsconfig.json
+
+// tsc -w
+// DOPO TUTTO IL PROGETTO VERRA' COMPILATO ANCHE ALTRI FILE TS
+
+// PER ESCLUDERE O INCLUDERE I FILE DAL COMPILATORE
+
+// in tsconfig.json
+
+// "exclude": [
+    // "./scripts/server.ts",
+    // "node_modules",
+    // "./scripts/app.js"
+//   ],
+//   "include": [
+//     "./scripts/server.ts",
+//     "./scripts/app.ts"
+//   ]
+
+
+// POI PER ATTIVARE IL COMPILATORE IN WATCH MODE
+
+// tsc -w
+
+
+// INOLTRE IN UN PROGETTO IN CUI VIENE USATO NODE.JS LA CARTELLA NODE_MODULES VA DI SOLITO ESCLUSA
+// PERCHE' E' UNA CARTELLA PESANTE ALL'INTERNO CI SONO MOLTI PACCHETTI NPM(node package manger) CHE VENGONO INSTALLATI
+// IN UN SECONDO MOMENTO QUANDO SI SCARICA IL PROGETTO IN LOCALE
+
+
+// SEMPRE IN  tsconfig.json
+
+// SI PUO' MODIFICARE LA VERSIONE DEL COMPILATORE PER BROWSER PIU DATATI
+
+// "target": "es2016",  
+// "target": "es5"
+
+// IN QUESTO MODO AD ESEMPIO PASSANDO ALLA ES5 LE VARIABILI SARANNO VAR QUINDI PER I BROWSER PIU' VECCHI SARA
+// NON CI SONO PROBLEMI DI LETTURA DEL CODICE TS CHE VERRA POI COMPILATO IN JS
+
+//  in tsconfig.json mettendo "sourceMap": true, 
+
+// POSSO VEDERE IL FILE TS CHE MI AIUTA CON IL DEBUGGING NEL BROWSER ANDANDO SU Debugger/Sorgenti/file:/Users
+
+
+// PER ORGANIZZARE IL PROGETTO GIA' IN PROSPETTIVA ANGULAR in tsconfig.json
+
+// "rootDir": "./src", 
+
+// "outDir": "./dist",
+
+// SI CREA UNA CARTELLA src IN CUI CI SARANNO I COMPONENTI CIOE' LE CARTELLE CHE HANNO I FILE HTML, SCSS , TS
+// SI CREA ANCHE UNA CARTELLA DIST IN CUI ALL'INTERNO CI SARA' IL CODICE COMPILATO DA TS A JS
+
+// in fine compilare su terminale con linea di comando tsc
+
+
+

@@ -25,6 +25,30 @@
 link documentazione: https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html
 
 
+## Compilatore TS
+
+// PER COMPILARE L'INTERO PROGETTO
+- `tsc --init`
+
+//  PER COMPILARE UN FILE TS
+ - `tsc app.ts --watch`
+
+// PER ATTIVARE IL COMPILATORE IN WATCH MODE
+ - `tsc app.ts -w`
+
+
+// PER COMPILARE TUTTO UNA VOLTA SISTEMATO L'ORGANIZAZIONE DEL LAVORO
+
+- in ts.config.json si posso modificare i path "rootDir" e "outDir"
+- si creano delle cartelle seguendo gia' la struttura di un progetto angular
+- si crea una cartella src all'interno altre cartelle main e server con dentro i file HTML,SCSS,TS
+- si crea una cartella dist in cui ci sara' il codice TypeScript compilato in JavaScript
+
+ - alla fine si compila tutto da terminale con : `tsc`
+
+ // per altre informazioni guarda app.ts
+
+
 
 
 

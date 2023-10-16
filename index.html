@@ -10,15 +10,28 @@
 </head>
 <body>
     <style>
-
+        ul{
+            margin: 0 auto;
+        }
+        li{
+            padding: 0;
+        }
     </style>
-    <div class="container">
-        <h1>
+    <div class="container-fluid">
+        <h1 class="text-center text-white p-4 bg-primary mb-5">
             Typescript Basics
         </h1>
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <ul class="row names">
+
+                </ul>
+            </div>
+        </div>
     </div>
 
 
-    <script src="./scripts/app.js"></script>
+    <script src="./dist/app.js"></script>
+    <script src="./dist/server/server.js"></script>
 </body>
 </html>
